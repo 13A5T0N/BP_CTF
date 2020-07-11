@@ -1,0 +1,15 @@
+body{
+    overflow-x: hidden;
+}
+
+.login {
+    /* height: 100%; */
+    margin-top: 2%;
+    position: fixed;
+    border-radius: 1px solid black;
+}
+
+.img{
+    margin-top: 1%;
+}
+

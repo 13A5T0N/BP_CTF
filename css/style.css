@@ -1,0 +1,122 @@
+#rev-chart {
+    margin-top: -44%;
+    margin-left: 15%;
+    /* position: relative; */
+    width: 40%;
+}
+
+#pro-chart {
+    margin-top:  22%;
+    margin-left: -10%;
+    width: 53%;
+    /* position: relative; */
+}
+
+.body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+#sales {
+    margin-top: 2%;
+    margin-left: 15%;
+    width: 84%;
+}
+
+table {
+    width: 100%;
+}
+
+#clients {
+    width: 84%;
+    margin-left: 16%;
+    margin-top: 1%;
+}
+
+#add_button {
+    margin-left: 16%;
+    margin-top: -44%
+}
+
+/* #request{
+    width: 84%;
+    margin-left: 16%;
+    margin-top: -40%;
+    z-index: 1;
+} */
+
+#tabs {
+    width: 12%;
+    margin-left: 16%;
+    margin-top: -40%;
+}
+
+#chat {
+    width: 60%;
+    margin-top: -9%;
+    margin-left: 31%;
+}
+
+#message {
+    width: 53%;
+    margin-left: 21%;
+}
+
+#product {
+    margin-left: 50%;
+    margin-top: -43%;
+    height: 10%;
+    width: 43%;
+}
+
+#product table {
+    overflow-y: scroll;
+    height: 43vh;
+    display: block;
+}
+
+#cart {
+    width: 55%;
+    margin-left: 43%;
+    margin-top: -25%;
+    height: 10%;
+    overflow: hidden;
+}
+
+#cart table {
+    overflow-y: scroll;
+    height: 35vh;
+    display: block;
+}
+
+
+#product table {
+    overflow-y: scroll;
+    height: 100px;
+    display: block;
+}
+
+#client_cart {
+    margin-top: -43%;
+    margin-left: 16%;
+    width: 19%;
+}
+
+#Client_input {
+    margin-left: -5%;
+}
+
+#payement {
+    margin-left: 16%;
+    margin-top: 8%;
+    width: 26%;
+}
+
+#reports{
+    width: 85%;
+    margin-left: 15%;
+    margin-top: -43%;
+    height: 100%;
+    overflow-y: scroll;
+}

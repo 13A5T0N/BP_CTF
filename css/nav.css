@@ -1,0 +1,20 @@
+#nav{
+    height: 100vh;
+    background-color: rgb(6, 173, 173);
+    width: 14%;
+    /* position: fixed; */
+}
+
+#nav ul li{
+    margin-top: 10%;
+}
+
+a{
+    color: black;
+}
+
+#top{
+    width: 100%;
+    float: right;
+    background-color: rgb(6, 173, 173);
+}

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../../css/nav.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark">
+  <nav id="nav">
+    <br><br>
+    <small class=""> Main</small>
+    <ul class="nav flex-column ">
+      <li class="nav-item ">
+        <a class="nav-link active text-white bg-dark" href="#"> <i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="clients.html">Clients</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="inventory.html">Inventory</i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="invoice.html">Invoice</i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="request.html">Message</a>
+      </li>
+    </ul>
+    <br><br>
+    <small class="">Shortcut</small>
+    <ul class="nav flex-column ">
+      <li class="nav-item ">
+          <a class="nav-link active text-white" href="add_invoice.html"> Add Invoice</a>
+      </li>
+  </ul>
+  </nav>
+
+  <div class="col-12 bg-dark shadow-lg" id="rev-chart">
+    <h5 class="text-white">Revenue</h5>
+    <div col-12 style="position: relative; height:-50%; width:100%; color:white;">
+      <canvas id="Revenue" class=" text-white bg-dark" ></canvas> 
+    </div>
+  </div>
+
+  <!-- <div class="col-12 bg-dark shadow-sm" id="pro-chart">
+    <h5 class="text-white">Product</h5>
+    <div  style="position: relative; height:-50%; width:100%; color:white;">
+      <canvas id="product" class=" text-white bg-dark" ></canvas> 
+    </div>
+  </div> -->
+
+  <div class="col-12 bg-dark shadow-lg text-white" id="sales">
+    <h4>Latest Sales</h4>
+    <table class="table table-striped text-white">
+      <thead class="thead-inverse">
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Amount</th>
+          <th>Status</th>
+          <th>Created On</th>
+          <th>Date Delivered</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">1</td>
+            <td>company</td>
+            <td>$1000</td>
+            <td>Paid</td>
+            <td>00-00-0000</td>
+            <td>00-00-0000</td>
+          </tr>
+          <tr>
+            <td scope="row">2</td>
+            <td>comp 1</td>
+            <td>$50</td>
+            <td>not paid</td>
+            <td>00-00-0000</td>
+            <td>00-00-0000</td>
+          </tr>
+          <tr>
+            <td scope="row">3</td>
+            <td>comp 1</td>
+            <td>$50</td>
+            <td>not paid</td>
+            <td>00-00-0000</td>
+            <td>00-00-0000</td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+
+
+  
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js" integrity="sha512-QEiC894KVkN9Tsoi6+mKf8HaCLJvyA6QIRzY5KrfINXYuP9NxdIkRQhGq3BZi0J4I7V5SidGM3XUQ5wFiMDuWg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+  <script src="../../js/charts/dash.js"></script>
+  <script src="../../js/charts/product.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

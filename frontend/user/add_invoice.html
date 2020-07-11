@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark body">
+
+    <nav id="nav">
+        <br><br>
+        <small class=""> Main</small>
+        <ul class="nav flex-column ">
+            <li class="nav-item ">
+                <a class="nav-link active text-white " href="index.html"> <i class="fa fa-home" aria-hidden="true"></i>
+                    Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white " href="clients.html">Clients</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white " href="inventory.html">Inventory</i></a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white ">Invoice</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="request.html">Message</a>
+            </li>
+        </ul>
+        <br><br>
+        <small class="">Shortcut</small>
+        <ul class="nav flex-column ">
+            <li class="nav-item ">
+                <a class="nav-link active text-white bg-dark" href="#"> Add Invoice</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="client_cart" class="col-12 bg-dark shadow-lg text-white">
+        <h4>Client</h4>
+        <hr class="bg-white">
+        <label for="">Clients</label>
+        <div class="input-group mb-3 col-12">
+            <input type="text" class="form-control bg-dark" placeholder="Client..."
+                aria-label="Recipient's username" aria-describedby="button-addon2" id="Client_input">
+            <div class="input-group-append">
+                <button class="btn btn-success" type="button" id="button-addon2"><i
+                        class="fa fa-arrow-right" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+    <div id="payement" class=" col-12 bg-dark shadow-lg text-white">
+        <table class="table  text-white col-12" id="cart-table">
+            <tr>
+                <td>Total</td>
+                <td>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control bg-dark" placeholder="Total"
+                            aria-label="Recipient's username" aria-describedby="button-addon2" disabled>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>discount</td>
+                <td>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control bg-dark" placeholder="Discount"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Paid</td>
+                <td>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control bg-dark" placeholder="Paid"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>return</td>
+                <td>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control bg-dark" placeholder="Return"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="cart" class="col-12 bg-dark shadow-lg text-white">
+        <h4>Product</h4>
+        <div class="form-group">
+            <label for=""></label>
+            <input type="text" name="search_text" id="search_text" placeholder="Search.." class="form-control" />
+        </div>
+        <div id="cart-table">
+            <table class="table table-striped text-white">
+                <tr>
+                    <th>#</th>
+                    <th>Product</th>
+                    <th>Material</th>
+                    <th>Size</th>
+                    <th>Color</th>
+                    <th>Price</th>
+                    <th>Amount</th>
+                    <th>Add</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>REHL</td>
+                    <td>software</td>
+                    <td>3GB</td>
+                    <td>red</td>
+                    <td>$100</td>
+                    <td>
+                        <input type="text" name="search_text" id="" class=" text-white bg-dark col-2 form-control" />
+                    </td>
+                    <td><button class="btn btn-success">+</button></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <div id="product" class="col-12 bg-dark shadow-lg text-white">
+        <h4>Cart</h4>
+        <hr class="bg-white">
+        <table class="table table-striped text-white">
+            <tr>
+                <th>Product</th>
+                <th>Size</th>
+                <th>Color</th>
+                <th>Amount</th>
+                <th>Price</th>
+                <th>Remove</th>
+            </tr>
+            <tr>
+                <td>REHL</td>
+                <td>3GB</td>
+                <td>red</td>
+                <td>2</td>
+                <td>$100</td>
+                <td><button class="btn btn-danger">-</button></td>
+            </tr>
+            <tr>
+                <td>REHL</td>
+                <td>3GB</td>
+                <td>red</td>
+                <td>2</td>
+                <td>$100</td>
+                <td><button class="btn btn-danger">-</button></td>
+            </tr>
+            <tr>
+                <td>REHL</td>
+                <td>3GB</td>
+                <td>red</td>
+                <td>2</td>
+                <td>$100</td>
+                <td><button class="btn btn-danger">-</button></td>
+            </tr>
+            <tr>
+                <td>REHL</td>
+                <td>3GB</td>
+                <td>red</td>
+                <td>2</td>
+                <td>$100</td>
+                <td><button class="btn btn-danger">-</button></td>
+            </tr>
+            <tr>
+                <td>REHL</td>
+                <td>3GB</td>
+                <td>red</td>
+                <td>2</td>
+                <td>$100</td>
+                <td><button class="btn btn-danger">-</button></td>
+            </tr>
+            <tr>
+                <td>REHL</td>
+                <td>3GB</td>
+                <td>red</td>
+                <td>2</td>
+                <td>$100</td>
+                <td><button class="btn btn-danger">-</button></td>
+            </tr>
+            <tr>
+                <td>REHL</td>
+                <td>3GB</td>
+                <td>red</td>
+                <td>2</td>
+                <td>$100</td>
+                <td><button class="btn btn-danger">-</button></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="./../../js/fetch/invoice.js"></script>
+</body>
+
+</html>

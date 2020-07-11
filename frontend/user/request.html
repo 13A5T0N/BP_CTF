@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark">
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light justify-end justify-content-end" id="top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <nav class="navbar navbar-light ">
+        </nav>
+    </nav> -->
+
+    <nav id="nav">
+        <br><br>
+        <small class=""> Main</small>
+        <ul class="nav flex-column ">
+            <li class="nav-item ">
+                <a class="nav-link active text-white " href="index.html"> <i class="fa fa-home" aria-hidden="true"></i>
+                    Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white " href="clients.html">Clients</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white " href="inventory.html">Inventory</i></a>
+            </li>
+            <li class="nav-item">
+                <a href="invoice.html" class="nav-link text-white">Invoice</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white bg-dark" href="#">Message</a>
+            </li>
+        </ul>
+        <br><br>
+        <small class="">Shortcut</small>
+        <ul class="nav flex-column ">
+            <li class="nav-item ">
+                <a class="nav-link active text-white" href="add_invoice.html"> Add Invoice</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="tabs">
+        <ul class="nav flex-column nav-tabs shadow-lg">
+            <li class="nav-item">
+                <a class="nav-link active" href="">Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="request_management.html">Management</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="text-white" id="chat">
+        <h4>Chat</h4>
+        <hr class="bg-white">
+        <table>
+            <tr>
+                <td>
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert" id="message">
+                        I changed my password to admin
+                        <br>
+                        <small class="text-left">Sender: erlich</small>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert" id="message">
+                        WTF
+                        <br>
+                        <small class="text-left">Sender: user</small>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert" id="message">
+                        IDIOT
+                        <br>
+                        <small class="text-left">Sender: John</small>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="alert alert-warning alert-dismissible fade show " role="alert" id="message">
+                        <span class="text-center">You just broadcasted youre password dude</span>
+                        <br>
+                        <small class="text-left">Sender: user</small>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <hr class="bg-white">
+        <br>
+        <form action="">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Message..." aria-label="Recipient's username"
+                    aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-success" type="button" id="button-addon2"><i class="fa fa-arrow-right"
+                            aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"
+        integrity="sha512-QEiC894KVkN9Tsoi6+mKf8HaCLJvyA6QIRzY5KrfINXYuP9NxdIkRQhGq3BZi0J4I7V5SidGM3XUQ5wFiMDuWg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+        integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
+        crossorigin="anonymous"></script>
+    <script src="../../js/charts/dash.js"></script>
+    <script src="../../js/charts/product.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
